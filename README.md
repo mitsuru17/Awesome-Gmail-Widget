@@ -18,7 +18,7 @@ If you're not into javascript and git, you will probably want to use the above l
 
 What is this?
 -------------
-This is a weather widget published on the [Chrome Web Store](https://chrome.google.com/webstore).
+This is a Gmail widget published on the [Chrome Web Store](https://chrome.google.com/webstore).
 
 What license is this extension released under?
 ----------------------------------------------
