@@ -1,0 +1,30 @@
+{
+  "update_url": "http://clients2.google.com/service/update2/crx",
+  "background": {
+    "scripts": [
+      "xml2array.js",
+      "jquery.js",
+      "jquery.md5.js",
+      "background.js"
+    ]
+  },
+  "version": "1.0.4",
+  "name": "Awesome Gmail Widget [ANTP]",
+  "description": "This Awesome Gmail widget shows unread emails in a resizable, recolorable widget. [ANTP]",
+  "options_page": "options.html",
+  "icons": {
+    "128": "i128.png"
+  },
+  "permissions": [
+    "https://*.google.com/",
+    "https://*.gmail.com/",
+    "https://en.gravatar.com/",
+    "tabs"
+  ],
+  "manifest_version": 2,
+  "web_accessible_resources": [
+    "gmail.html",
+    "options.html"
+  ],
+  "content_security_policy": "script-src 'self' https://en.gravatar.com https://apis.google.com https://api.flattr.com; object-src 'self'"
+}

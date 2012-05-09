@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!--
+    =- For Awesome New Tab Page:
+    =- https://chrome.google.com/webstore/detail/mgmiemnjjchgkmgbeljfocdjjnpjnmcg
+    -->
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery.md5.js"></script>
+    <script type="text/javascript" src="gmail.js"></script>
+
+    <style>
+      html, body {
+        user-select: none;
+        -webkit-user-select: none;
+        cursor: default;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", "Droid Sans", Arial, sans-serif;
+        color: white;
+      }
+	  
+	  .sender, .subject, .message, .imageholder, .account, .count {
+		cursor: pointer;
+	  }
+
+      .widget {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+
+        background-image: url(/gmail.png), -webkit-gradient(linear, 100% 100%, 0% 0%, from(rgba(255, 255, 255, 0.347656)), to(rgba(255, 255, 255, 0.0390625)));
+        background-color: #1B84C6;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+      }
+      #w1x1 {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+      }
+      #w2x1 {
+        width: 406px;
+        height: 200px;
+        position: absolute;
+        top: 206px;
+        bottom: 0;
+      }
+
+      .account {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 18px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .unread {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 120px;
+        overflow: hidden;
+      }
+      .subject {
+        font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .summary {
+        font-size: 14px;
+        padding-left: 3px;
+        border-left: 2px solid rgba(0, 0, 0, .07);
+
+        height: 40px;
+        overflow: hidden;
+      }
+      .sender {
+        font-weight: bold;
+        padding-right: 5px;
+      }
+      .count {
+        font-weight: bold;
+        font-size: 54px;
+        position: absolute;
+        bottom: -2px;
+        right: 2px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="widget">
+      <div class="account">
+        &nbsp;
+      </div>
+      <div class="unread"></div>
+
+      <div class="count"></div>
+    </div>
+  </body>
+</html>

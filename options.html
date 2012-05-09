@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Options - Gmail Widget</title>
+	  <script type="text/javascript" src="jquery.js"></script>
+	  <script type="text/javascript" src="/colorpicker/js/colorpicker.js"></script>
+	  <script type="text/javascript" src="options.js"></script>
+	  <link rel="stylesheet" href="/colorpicker/css/colorpicker.css" type="text/css" media="screen">
+	  <style type="text/css">
+
+	  body {
+		font:13px/150% Verdana, Tahoma, sans-serif;
+		-webkit-user-select: none;
+		user-select: none;
+	  }
+	  form {
+		padding-top: 0px;
+		padding-left: 100px;
+	  }
+	  .form label {
+		margin-left: 10px;
+		color: #999
+	  }
+	  .form label:hover {
+		margin-left: 10px;
+		color: #555
+	  }
+	  input:hover, textarea:hover,
+	  input:focus, textarea:focus {
+		border-color: #C9C9C9;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	  }
+	  .hl > input, select {
+		padding: 9px;
+		border: solid 1px #E5E5E5;
+		outline: 0;
+		font: normal 13px/100% Verdana, Tahoma, sans-serif;
+		width: 200px;
+		background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+		background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+		box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+		-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+		-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	  }
+
+	  select {
+		width: 75px;
+	  }
+	  .indent {
+		margin-left: 15px;
+	  }
+	  #colorSelector {
+		display: inline-block;
+	  }
+		  
+	  input[type="button"] {
+		cursor: pointer;
+	  }
+
+	  #buttons {
+		text-align: center;
+		position: absolute;
+		top: 15px;
+		left: 22px;
+		width: 70px;
+	  }
+	  #plus {
+		padding-left: 100px;
+	  }
+
+	  hr {
+		height: 0;
+		border: 0;
+		border-bottom: 1px solid rgba(0, 0, 0, .5);
+	  }
+	  </style>
+	</head>
+
+	<body>
+	  <form class="form">
+		<div id="colorSelector"></div>
+		<label for="colorSelector">Widget Background Color</label>
+		<p>
+		  <select id="showemailaddress">
+			<option value="Y">Yes</option>
+			<option value="N">No</option>
+		  </select>
+		  <label for="showemailaddress">Show your e-mail address on the top?</label>
+		</p>
+		<p>
+		  <select id="showemail">
+			<option value="Y">Yes</option>
+			<option value="N">No</option>
+		  </select>
+		  <label for="showemail">Show e-mail previews in Gmail Widget?</label>
+		</p>
+		<p class="indent summary">
+		  <select id="showemailsummary">
+			<option value="Y">Yes</option>
+			<option value="N">No</option>
+		  </select>
+		  <label for="showemailsummary">Show e-mail summary?</label>
+		</p>
+		<p class="indent sender">
+		  <select class="indent" id="showemailsender">
+			<option value="Y">Yes</option>
+			<option value="N">No</option>
+		  </select>
+		  <label for="showemailsender">Show e-mail sender?</label>
+		</p>
+
+		<p>
+		  All changes are saved <i>automatically</i>.
+		</p>
+
+		<p class="hl">
+		  <input id="antp" type="button" value="Back to ANTP">
+		</p>
+	  </form>
+
+		<div id="plus">
+		  <g:plus href="https://plus.google.com/101062285048075360930" rel="publisher" width="300" height="131" theme="light"></g:plus>
+		</div>
+
+		<div id="buttons">
+		  <a class="FlattrButton" style="display:none;" href="http://antp.co/"></a>
+		  <hr />
+		  +1 ANTP
+		  <g:plusone size="tall" href="https://chrome.google.com/webstore/detail/mgmiemnjjchgkmgbeljfocdjjnpjnmcg"></g:plusone>
+		  <hr />
+		  +1 This Widget
+		  <g:plusone size="tall" href="https://chrome.google.com/webstore/detail/mhabakfdiogoaohibmllhdngghgeiofm"></g:plusone>
+		</div>
+	</body>
+</html>
